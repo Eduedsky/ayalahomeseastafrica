@@ -1395,7 +1395,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/cov1.jpg);
+  background-image: url(../img/banner/purchase-3113198.jpg);
 }
 
 /* line 4, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_slider.scss */
@@ -1411,7 +1411,7 @@ h3 {
 
 /* line 10, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_slider.scss */
 .slider_area::before {
-  background: #001d38;
+  background: #474747;
   position: absolute;
   left: 0;
   top: 0;
@@ -3175,6 +3175,9 @@ h3 {
 /* line 42, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_popular_property.scss */
 .popular_property .single_property .property_thumb .property_tag.red {
   background: #ff5748 !important;
+}
+.popular_property .single_property .property_thumb img {
+  height: 250px;
 }
 
 /* line 47, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_popular_property.scss */
