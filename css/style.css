@@ -1400,7 +1400,7 @@ h3 {
 
 /* line 4, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url(../img/banner/cover2.jpg);
+  background-image: url(../img/banner/property_details.png);
 }
 
 /* line 7, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_slider.scss */
@@ -1789,7 +1789,7 @@ h3 {
 
 /* line 254, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_slider.scss */
 .property_bg {
-  background-image: url(../img/banner/property.png);
+  background-image: url(../img/banner/house-2469110.jpg);
 }
 
 /* line 2, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_about.scss */
@@ -1952,7 +1952,7 @@ h3 {
 
 /* line 29, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_counter.scss */
 .home_details {
-  background-image: url(../img/banner/home_details.png);
+  background-image: url(../img/plots/plot2.jpg);
   background-size: cover;
   background-position: center center;
   padding: 140px 0;
@@ -1987,7 +1987,8 @@ h3 {
 
 /* line 51, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_counter.scss */
 .home_details .modern_home_info {
-  background: #fff;
+  opacity: 0.9;
+  background: rgb(255, 255, 255);
   margin-top: 20px;
   padding: 50px 30px 30px 30px;
   -webkit-border-radius: 10px;
@@ -2301,7 +2302,7 @@ h3 {
 
 /* line 2, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_testmonial.scss */
 .testimonial_area {
-  background-image: url(../img/banner/testmonial.png);
+  background-image: url(../img/banner/hotel-apartments-2678340.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2488,8 +2489,18 @@ h3 {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #fdae5c;
-  opacity: 0.9;
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.8;
   z-index: -1;
   content: "";
 }
