@@ -2616,6 +2616,10 @@ h3 {
   border: none;
 }
 
+.carousel-inner .carousel-item img {
+  height: 400px;
+}
+
 /* line 24, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_property_details.scss */
 .property_details .property_banner .owl-carousel .owl-nav div.owl-next {
   left: auto;
