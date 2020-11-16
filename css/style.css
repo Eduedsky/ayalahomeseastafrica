@@ -2615,7 +2615,10 @@ h3 {
   background: #fff;
   border: none;
 }
-
+.fb-comment {
+  padding: 20px;
+  margin: 20px;
+}
 .carousel-inner .carousel-item img {
   height: 400px;
 }
