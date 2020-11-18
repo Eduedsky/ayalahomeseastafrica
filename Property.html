@@ -37,77 +37,12 @@
 
   <body>
 
-    <!-- <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=1615780148630024&autoLogAppEvents=1" nonce="3Bp0k9Oz"></script>   
-    -->
-    <script>
+    <!--  Load the JS SDK asynchronously -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=1615780148630024&autoLogAppEvents=1" nonce="R0gYFVFd"></script>
 
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1615780148630024',
-          autoLogAppEvents : true,
-          status           : true,
-          cookie     : true,
-          xfbml      : true,
-          version    : 'v9.0'
-        });
-          
-        FB.getLoginStatus(function(response) {
-          if (response.status === 'connected') {
-            // The user is logged in and has authenticated your
-            // app, and response.authResponse supplies
-            // the user's ID, a valid access token, a signed
-            // request, and the time the access token 
-            // and signed request each expire.
-            var uid = response.authResponse.userID;
-            var accessToken = response.authResponse.accessToken;
-          } else if (response.status === 'not_authorized') {
-            // The user hasn't authorized your application.  They
-            // must click the Login button, or you must call FB.login
-            // in response to a user gesture, to launch a login dialog.
-          } else {
-            // The user isn't logged in to Facebook. You can launch a
-            // login dialog with a user gesture, but the user may have
-            // to log in to Facebook before authorizing your application.
+    <!-- The JS SDK Login Button -->
 
-            FB.login(function(response) {
-              if (response.authResponse) {
-              console.log('Welcome!  Fetching your information.... ');
-              FB.api('/me', function(response) {
-                console.log('Good to see you, ' + response.name + '.');
-              });
-              } else {
-              console.log('User cancelled login or did not fully authorize.');
-              }
-            });
-          }
-         
-        };
-
-      });
-    
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-
-
-      function checkLoginState() {
-        FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
-        });
-      }
-
-    </script>
-
-    // <!-- The JS SDK Login Button -->
-
-
-    // <!-- Load the JS SDK asynchronously -->
-    // <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk/debug.js" nonce="EpUz3rNl"></script>    <!-- header-start -->
 
     <header>
       <div class="header-area">
@@ -770,10 +705,7 @@
       </div>
     </div>
 
-    <fb:login-buton
-      scope="public_profile,email,likes"
-      onlogin="checkLoginState();">
-    </fb:login-buton>
+    <div class="fb-comments" data-href="https://eduedsky.github.io/ayalahomeseastafrica/Property.html" data-numposts="50" data-width=""></div>
 
     <!-- contact_action_area  -->
     <div class="contact_action_area">

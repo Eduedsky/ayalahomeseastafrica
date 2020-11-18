@@ -49,6 +49,12 @@
           statusChangeCallback(response);
         });
       }
+
+      function setElements(isLoggedIn) {
+        if (isLoggedIn) {
+          documents.getElementById("profile".style.dispal);
+        }
+      }
     </script>
 
     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
