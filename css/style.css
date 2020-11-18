@@ -1860,6 +1860,9 @@ h3 {
 .about_mission {
   padding-top: 120px;
 }
+.privacy_policy {
+  padding-top: 120px;
+}
 
 @media (max-width: 767px) {
   /* line 43, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_about.scss */
@@ -2227,7 +2230,7 @@ h3 {
   visibility: visible;
 }
 
-/* line 1, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact_quote.scss */
+/* line 1, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_rct_quote.scss */
 .contact_form_quote {
   padding-top: 0px;
   padding-bottom: 100px;
