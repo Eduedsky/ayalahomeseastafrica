@@ -89,7 +89,16 @@
 
 
     </script>
+
+    <!-- The JS SDK Login Button -->
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
+    <div id="status">
+    </div>
+
+    <!-- Load the JS SDK asynchronously -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk/debug.js" nonce="EpUz3rNl"></script>    <!-- header-start -->
+
     <header>
       <div class="header-area">
         <div class="header-top_area d-none d-lg-block">
@@ -771,7 +780,9 @@
       </div>
     </div>
     <!-- /contact_action_area  -->
+
     <div class="fb-comments" data-href="https://eduedsky.github.io/ayalahomeseastafrica/Property.html" data-numposts="15" data-width="500"data-colorscheme="light" data-order-by="reverse_time"></div>
+  
     <footer class="footer">
       <div class="footer_top">
         <div class="container">
