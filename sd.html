@@ -55,10 +55,35 @@
       //     documents.getElementById("profile".style.dispal);
       //   }
       // }
+
+      document
+        .getElementById("custom-login-button")
+        .addEventListener("click", function () {
+          FB.login(
+            function (response) {
+              console.log("custom login complete");
+              console.log(response);
+
+              FB.api("/me", function (response) {
+                console.log("Successful login for: " + response.name);
+                document.getElementById("status").innerHTML =
+                  "Thanks for logging in, " + response.name + "!";
+              });
+            },
+            {
+              scope: "email",
+              return_scopes: true,
+            }
+          );
+        });
     </script>
 
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
+    <div id="login-buttons">
+      <button id="custom-login-button">Login to facebook</button>
+    </div>
+
+    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button> -->
 
     <div
       class="fb-comments"
