@@ -1955,8 +1955,10 @@ h3 {
 
 /* line 29, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_counter.scss */
 .home_details {
-  background-image: url(../img/plots/plot2.jpg);
+  background-image: url(../img/plots/plot4.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center center;
   padding: 140px 0;
 }
