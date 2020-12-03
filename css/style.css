@@ -1958,7 +1958,7 @@ h3 {
   background-image: url(../img/plots/plot4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
   background-position: center center;
   padding: 140px 0;
 }
