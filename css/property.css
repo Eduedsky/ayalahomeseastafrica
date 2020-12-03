@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+
+.card .card-text {
+  font-size: 10px;
+}

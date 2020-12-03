@@ -32,84 +32,30 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/property.css" />
+
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
   </head>
   <body>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          appId: "1615780148630024",
-          cookie: true,
-          xfbml: true,
-          version: "v9.0",
-        });
-
-        FB.getLoginStatus(function (response) {
-          statusChangeCallback(response);
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-
-
-      function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-        console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me', function(response) {
-          console.log('Successful login for: ' + response.name);
-          document.getElementById('status').innerHTML =
-            'Thanks for logging in, ' + response.name + '!';
-        });
-      }
-
-      function statusChangeCallback(response) {
-        if (response.status == "connected") {
-          console.log("Logged in and authenticated");
-          testAPI();  
-        } else {
-          console.log("Not authenticated");
-        }
-      }
-
-      function checkLoginState() {
-        FB.getLoginStatus(function (response) {
-          statusChangeCallback(response);
-        });
-      }
-           
-
-    </script>
- 
     
-    <!-- The JS SDK Login Button -->
-    
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
-    
-    <div id="status">
-    </div>
-    
-    <!-- Load the JS SDK asynchronously -->
-   <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
-    
-
-    <!--  Load the JS SDK asynchronously -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=1615780148630024&autoLogAppEvents=1" nonce="R0gYFVFd"></script>
-
-    <!-- The JS SDK Login Button -->
-
-
-    <header>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+      this.page.url = "https://eduedsky.github.io/ayalahomeseastafrica/Property";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = '/ayala-property-commenting/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+   
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://ayala-homes-east-africa.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+</script>
+<!-- <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+      <header>
       <div class="header-area">
         <div class="header-top_area d-none d-lg-block">
           <div class="container">
@@ -220,17 +166,10 @@
     <!-- slider_area_end -->
     <div class="popular_property plus_padding">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <!-- <div class="section_title mb-40 text-center">
-              <h4>240 Properties found</h4>
-            </div> -->
-          </div>
-        </div>
-        <div class="row">
+        <div class="container-fluid">
           <div class="card border-success mb-3">
             <div class="row no-gutters">
-              <div class="col-md-6">
+              <div class="col-md-6 images">
                 <div id="carouselluxuryindicator" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselluxuryindicator" data-slide-to="0" class="active"></li>
@@ -316,12 +255,12 @@
                   alt="..."
                 /> -->
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 content">
                 <div class="card-body">
                   <h5 class="card-title">LUXURIOUS 5 BEDROOMS MAISONATTE LOCATION - KIAMUMBI ESTATE
                     IN KIAMBU COUNTY.</h5>
                   <p class="card-text">                    
-                    <h4 class="card-title">Features</h4>
+                    <h4 class="card-title">Price KES. 30M negotiable</h4>
                     
                     Excellent location in a secured gated
                     residential estate. 
@@ -334,9 +273,8 @@
                     <br>➡️ Well manicured garden ➡️ Large and airy window systems
                     <br>➡️ Ample water supply plus overhead water storage tank of 10,000cubic metres 
                     <br>➡️ Large parking space 
-                    <br>➡️ Perimeter wall reinforced by an Electric fence and a natural well cured fence. 
-                    <br>➡️ Generator provision for standb lighting.
-                    <br>➡️ Price KES. 30M negotiable
+                    <!-- <br>➡️ Perimeter wall reinforced by an Electric fence and a natural well cured fence.  -->
+                    <!-- <br>➡️ Generator provision for standb lighting. -->
                   </p>
                   <!-- <p class="card-text">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -361,12 +299,12 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/3 bedroom apartment/pic2.jpg" alt="2nd slide">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/3 bedroom apartment/pic3.jpg" alt="3rd slide">
-                    </div>
-                    <div class="carousel-item">
+                    </div> -->
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/3 bedroom apartment/pic4.jpg" alt="4th slide">
-                    </div>
+                    </div> -->
                     <div class="carousel-item ">
                       <img class="d-block w-100" src="img/property/3 bedroom apartment/pic5.jpg" alt="5th slide">
                     </div>
@@ -376,9 +314,9 @@
                     <div class="carousel-item ">
                       <img class="d-block w-100" src="img/property/3 bedroom apartment/pic7.jpg" alt="7th slide">
                     </div>
-                    <div class="carousel-item ">
+                    <!-- <div class="carousel-item ">
                       <img class="d-block w-100" src="img/property/3 bedroom apartment/pic8.jpg" alt="8th slide">
-                    </div>
+                    </div> -->
                   </div>
                   <a class="carousel-control-prev" href="#carousel3bedroomapartment" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -399,7 +337,7 @@
                 <div class="card-body">
                   <h5 class="card-title">3 bedroom Apartment Located along Kamiti road at Maziwa in Nairobi</h5>
                   <p class="card-text">                    
-                    <h4 class="card-title">Features</h4>
+                    <h4 class="card-title">Price kes.9.7M negotiable</h4>
                     
                     ➡️Backup generator 
                     <br>➡️ Shared Swimming Pool
@@ -407,11 +345,10 @@
                     <br>➡️ Balcony ➡️All amenities available
                     <br>➡️ Electric Fence. 
                     <br>➡️ Well manicured garden 
-                    <br>➡️ Well secured estate
+                    <!-- <br>➡️ Well secured estate -->
                     <br>➡️ Large parking space 
                     <br>➡️ Playground for children
                     <br>➡️ Backup generator
-                    <br>➡️ Price kes.9.7M negotiable
                      
                   </p>
                   <!-- <p class="card-text">
@@ -473,17 +410,16 @@
                   <h5 class="card-title">3 bedroom bungalow  - Located 100mtres  off the Eastern bypass at Kamakis
                     .</h5>
                   <p class="card-text">                    
-                    <h4 class="card-title">Features</h4>
+                    <h4 class="card-title">Price kes.13M negotiable</h4>
                     
                     ➡️Sitting on 50*100 plot
-                    <!-- <br> ➡️Spacious lounge opening to dinning area, Family area  -->
+                    <br> ➡️Spacious lounge opening to dinning area, Family area 
                     <br>➡️ 3 DSQs
                     <br>➡️Cabro paved access
                     <br>➡️Perimeter wall
                     <br>➡️Developed neighborhood
                     <br>➡️Solar power back up
                     <br>➡️Good security
-                    <br>➡️Price kes.13M negotiable
                   </p>
                   <!-- <p class="card-text">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -520,9 +456,9 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom/elegant6.jpg" alt="Second slide">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom/elegant7.jpg" alt="Second slide">
-                    </div>
+                    </div> -->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom/elegant10.jpg" alt="Second slide">
                     </div>
@@ -544,23 +480,20 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">ELEGANT 4 BEDROOMS MAISONATTE IN A GATED COMMUNITY ESTATE, Location:-  IN RUIRU</h5>
+                  <h5 class="card-title">ELEGANT 4 BEDROOMS MAISONATTE IN A GATED COMMUNITY ESTATE, Location:-  IN RUIRU 10 units remaining out of 49</h5>
                   <p class="card-text">                    
-                    <h4 class="card-title">10 units remaining out of 49</h4>
+                    <h4 class="card-title"> Price kes.13M Mortgage and 12.5M cash </h4>
                                        
                     ➡️ Proximity to Malls (Spur Mall),Naivas Supermarket, Petrostation, schools. 
                     <br>➡️ Spacious American kitchen
                     <!-- <br>➡️ Large master bedroom with balcony and a dressing area  -->
                     <!-- <br>➡️ Large closets in all bedrooms ➡️ Large and airy window systems  -->
-                    <br>➡️ Detached SQ
-                    <br>➡️ Laundry area.
-                    <br>➡️ Solar heater
-                    <br>➡️ Well manicured garden 
+                    <br>➡️ Detached SQ ➡️ Laundry area.
+                    <br>➡️ Well manicured garden ➡️ Solar heater
                     <br>➡️ Connected to Safaricom internet
                     <br>➡️ Good security 24/7 with manned gate.
                     <br>➡️ Play ground for children
                     <br>➡️ All other amenities available
-                    <br>➡️ Price kes.13M Mortgage and 12.5M cash.
                   </p>
                   <!-- <p class="card-text">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -582,9 +515,9 @@
                     <div class="carousel-item active">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant1.jpg" alt="First slide">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant2.jpg" alt="Second slide">
-                    </div>
+                    </div> -->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant3.jpg" alt="Third slide">
                     </div>
@@ -597,21 +530,21 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant6.jpg" alt="Second slide">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant7.jpg" alt="Third slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant8.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
+                    </div> -->
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant9.jpg" alt="Third slide">
-                    </div>
+                    </div> -->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant10.jpg" alt="Second slide">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant11.jpg" alt="Third slide">
-                    </div>
+                    </div> -->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/elegant 4 bedroom maisonette/elegant12.jpg" alt="Second slide">
                     </div>
@@ -636,21 +569,18 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">ELEGANT 4-BEDROOM MAISONETTE </h5>
+                  <h5 class="card-title">ELEGANT 4-BEDROOM MAISONETTE LOCATED IN RUIRU - MEMBLEY ESTATE</h5>
                   <p class="card-text">                    
-                    <h4 class="card-title">✅Located IN RUIRU - MEMBLEY ESTATE</h4>
-                    
-                    ➡️ 4bedrooms all ensuite with a DSQ. ➡️ All amenities available.
-                    <br>➡️ Fully fitted kitchen with a pantry, service kitchen and utility area.
-                    <br>➡️ Kitchen garden
+                    <h4 class="card-title"> Price kes.20M </h4>
+                                        ➡️ 4bedrooms all ensuite with a DSQ. ➡️ All amenities available.
+                    <br>➡️ Fully fitted kitchen with a pantry, service kitchen and utility area. 
                     <br>➡️ Perimeter wall with electric fence.
                     <br>➡️ Neatly finished gypsum ceilings and high quality light fittings.
-                    <br>➡️ Cabros paved parking
+                    <!-- <br>➡️ Cabros paved parking -->
                     <br>➡️ Well maintained garden
-                    <br>➡️ Large closets in all bedrooms
+                    <!-- <br>➡️ Large closets in all bedrooms -->
                     <br>➡️ Ample water supply with an additional overhead water storage tank 
-                    <br>➡️ Developed and secure location
-                    <br>➡️ Price kes.20M
+                    <!-- <br>➡️ Developed and secure location -->
                   </p>
                   <!-- <p class="card-text">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -675,9 +605,9 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive1.jpg" alt="Second slide">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive2.jpg" alt="Third slide">
-                    </div>
+                    </div> -->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive3.jpg" alt="First slide">
                     </div>
@@ -687,18 +617,18 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive5.jpg" alt="Third slide">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive6.jpg" alt="First slide">
-                    </div>
+                    </div> -->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive7.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive8.jpg" alt="Third slide">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive9.jpg" alt="Second slide">
-                    </div>
+                    </div> -->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/property/executive 3 bedroom bungalo/executive10.jpg" alt="Third slide">
                     </div>
@@ -723,18 +653,16 @@
                 <div class="card-body">
                   <h5 class="card-title">EXECUTIVE 3 BEDROOMS BUNGALOW ✅Located IN RUIRU - KIMBO AREA.</h5>
                   <p class="card-text">                    
-                    <h4 class="card-title">Features</h4>
+                    <h4 class="card-title">Price kes.6.6M</h4>
                     
                     ➡️ 3bedrooms master ensuite
                     <br>➡️ Fully fitted kitchen with a pantry, service kitchen and utility area.
-                    <br>➡️ Perimeter wall with electric fence.
                     <br>➡️ Fitted with solar heater
                     <br>➡️ Neatly finished gypsum ceilings and high quality light fittings. 
                     <br>➡️ Ample space for parking 
                     <br>➡️ Large closets in all bedrooms
                     <br>➡️ Developed and secure location
-                    <br>➡️ All amenities available.
-                    <br>➡️ Price kes.6.6M
+                    <!-- <br>➡️ All amenities available. -->
                   </p>
                   <!-- <p class="card-text">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -744,6 +672,7 @@
             </div>
           </div>
         </div>
+
 
         <nav aria-label="Page navigation example">
           <ul class="pagination justify-content-end">
@@ -758,6 +687,13 @@
             </li>
           </ul>
         </nav>
+        <div class="cotainer-fluid">
+          <div class="row">
+            <div class="col-md-6">
+                <div id="disqus_thread"></div>
+            </div>
+          </div>
+        </div>
 
       
         <!-- <div class="row">
@@ -887,7 +823,8 @@
     <!--/ footer end  -->
 
     <!-- link that opens popup -->
-
+    <script id="dsq-count-scr" src="//ayala-homes-east-africa.disqus.com/count.js" async></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 
