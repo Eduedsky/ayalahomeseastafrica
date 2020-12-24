@@ -13,6 +13,7 @@
   justify-content: start;
 }
 
+
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
 /* Tablet desktop :768px. */
@@ -732,6 +733,7 @@ h3 {
     position: absolute;
     right: 0px;
     width: 100%;
+    height: 100%;
     z-index: 9;
   }
 }
@@ -983,7 +985,7 @@ h3 {
 
 /* line 94, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .socail_links ul li a {
-  color: #a8a7a0;
+  color: #a0a8a1;
   margin: 0 10px;
   font-size: 15px;
 }
@@ -1133,7 +1135,7 @@ h3 {
   /* IE6-9 */
   width: 100%;
   height: 3px;
-  bottom: -33px;
+  bottom: -8px;
   left: 0;
   opacity: 0;
   transform: scaleX(0);
@@ -1955,7 +1957,7 @@ h3 {
 
 /* line 29, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_counter.scss */
 .home_details {
-  background-image: url(../img/plots/plot4.jpg);
+  background-image: url(../img/banner/back.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   /* background-size: contain; */
@@ -2148,6 +2150,8 @@ h3 {
 /* line 18, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_team.scss */
 .team_area .single_team .team_thumb img {
   width: 100%;
+  height: 100%;
+  /* height: 350px; */
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -4693,16 +4697,35 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
   color: #e8e8e8;
 }
 
-/* line 189, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_footer.scss */
-.footer .socail_links ul li a:hover {
+.footer .socail_links .facebook a {
+  color: blue !important;
+  background: white;
+  border-color: transparent;
+}
+.footer .socail_links .instagram a {
+  color: #82199c !important;  
+  background: white;
+  border-color: transparent;
+}
+
+.footer .socail_links .facebook a:hover {
   color: #fff !important;
-  background: #fd955d;
+  background: blue;
+  border-color: transparent;
+}
+.footer .socail_links .instagram a:hover {
+  color: #fff !important;
+  background: rgb(136, 11, 185);
   border-color: transparent;
 }
 
 /* line 1, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_bradcam.scss */
 .bradcam_bg_1 {
   background-image: url(../img/banner/bradcam.png);
+}
+.bradcam_bg_2 {
+  background-image: url(../img/team/Kris.jpg);
+  background-attachment: fixed;
 }
 
 /* line 4, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_bradcam.scss */
@@ -5457,7 +5480,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 /* line 13, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */
 .contact-info__icon {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 /* line 16, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */
@@ -5506,7 +5529,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 /* line 61, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */
 .form-contact .form-control {
-  border: 1px solid #e5e6e9;
+  border: 1px solid #28c735;
   border-radius: 0px;
   height: 48px;
   padding-left: 18px;
@@ -5523,7 +5546,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 /* line 74, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */
 .form-contact .form-control::placeholder {
   font-weight: 300;
-  color: #999999;
+  color: #666565;
 }
 
 /* line 80, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */
