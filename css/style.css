@@ -13,6 +13,27 @@
   justify-content: start;
 }
 
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+
+  }
+  50% {
+    opacity: 0;
+    color: green;
+
+  }
+  100% {
+    opacity: 1;
+    color: green;
+
+  }
+}
 
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
